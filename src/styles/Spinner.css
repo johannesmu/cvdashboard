@@ -1,0 +1,13 @@
+.spinner > img {
+  animation: spinning 4s forwards linear infinite;
+  max-width: 100%;
+}
+
+@keyframes spinning {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

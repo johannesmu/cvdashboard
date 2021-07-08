@@ -1,5 +1,5 @@
 import '../styles/Header.css'
-import {useState, useEffect} from 'react'
+import {useState} from 'react'
 
 const Toggle = (props) => {
   
@@ -22,7 +22,6 @@ export function Header(props) {
   const[darkMode,setDarkMode] = useState(props.defaultState)
 
   const clickHandler = (evt) => {
-    const val = evt.target.value
     if( darkMode === true ) {
       setDarkMode( false )
       props.mode( false )
