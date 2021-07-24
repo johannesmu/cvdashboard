@@ -13,7 +13,7 @@ function App() {
   const [data,setData] = useState()
   const [date,setDate] = useState()
   const[ production, setProduction] = useState(false)
-  const[ darkMode, setDarkMode] = useState( false )
+  const[ darkMode, setDarkMode] = useState( true )
   const [ userPref, setUserPref] = useState({})
 
   

@@ -2,9 +2,8 @@ import '../styles/Header.css'
 import {useState} from 'react'
 
 const Toggle = (props) => {
-  
   return (
-    <div className="btn-group ms-2" role="group" aria-label="Basic checkbox toggle button group">
+    <div className="btn-group ms-2" role="group" aria-label="Toggle dark mode">
       <input 
         type="checkbox" 
         className="btn-check" 
@@ -13,7 +12,7 @@ const Toggle = (props) => {
         value="true" 
         checked={ props.mode }
       />
-      <label className="btn btn-outline-success" htmlFor="dark-mode">Dark</label>
+      <label className="btn btn-outline-success" htmlFor="dark-mode">Dark mode {(props.mode) ? "on" : "off"}</label>
     </div>
   )
 }

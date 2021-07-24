@@ -4,21 +4,15 @@ export function Sorter(props) {
   const [ darkMode, setDarkMode ] = useState(false)
 
   useEffect(()=>{
-    // if( props.mode ) {
-    //   setDarkMode( true )
-    // }
-    // else {
-    //   setDarkMode( false )
-    // }
     setDarkMode( props.mode )
   },[ props.mode ])
 
   return (
     <div className="row py-3 align-items-center">
-      <div className="col-md-2">
+      <div className="col-md-1">
         <p className={(darkMode) ? "my-0 py-2 text-end text-light" : "my-0 py-2 text-end text-dark"}>Sort by</p>
       </div>
-      <div className="col-md-4">
+      <div className="col-md-3">
         <div className="btn-group" role="group" aria-label="Sort data by date, suburb or venue">
           <input
             type="radio"
@@ -57,7 +51,7 @@ export function Sorter(props) {
 
       <div className="col-md-4">
         <select
-        className="form-select"
+        className="form-select bg-dark text-light"
         aria-label="Select sort direction"
         onChange={ props.orderBy }
         defaultValue={ props.order }
