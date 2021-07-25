@@ -74,8 +74,8 @@ export function Content(props) {
 
   return (
     <div className="content container">
-      <h3 className={(darkMode) ? "p-3 text-muted" : "p-3"}>Covid Infection Sites Data NSW</h3>
-      <h6 className={(darkMode) ? "p-3 text-light" : "p-3"}>{total} records updated on {date}</h6>
+      <h3 className={(darkMode) ? "p-0 text-muted p-sm-3" : "p-0 p-sm-3"}>Covid Infection Sites Data NSW</h3>
+      <h6 className={(darkMode) ? "p-0 text-light p-sm-3" : "p-0 p-sm-3"}>{total} records updated on {date}</h6>
       <Sorter by={sortBy} changeBy={sortHandler} orderBy={orderHandler} direction={order} mode={darkMode} />
       <List data={data} mode={darkMode}/>
     </div>
